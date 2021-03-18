@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
-    <title>Not Google</title>
+    <title>Noodle</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul id= "list-1">
-                <li>About</li>
-                <li>Store</li>
-            </ul>
-            <ul id= "list-2">
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>Dot image placeholder</li>
-                <li>circle placeholder</li>
-            </ul>
+     <!-- Search page html -->
 
-            
-        </nav>
-    </header>
+    <div id="search-page">
+        <header>
+            <nav id="search-nav">
+                <ul id="list-1">
+                    <li>About</li>
+                    <li>Store</li>
+                </ul>
+                <ul id="list-2">
+                    <li>Noomail</li>
+                    <li>Images</li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="logo">
-   
-    <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png">
+        <section id="logo-main">
+            <img
+                src="images/noodle.png">
+        </section>
 
-
-    </section>
-
-    <section id="search-section">
-       
+        <section id="search-section">
             <form>
                 <div>
                     <input type="text">
                 </div>
                 <div id="button-section">
-                    <input type ="submit" value= "Google search">
-                    <input type="submit" value ="I'm feeling lucky">
+                    <input type="submit" name="search" value="Noodle search">
+                    <input type="button" name="random" value="I'm feeling noodly">
                 </div>
             </form>
-       
+        </section>
+        
+        <footer>
+            <div id=footer1>
+                United Kingdom
+            </div>
+            <div id=footer2>
+                <ul>
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>How search works</li>
+                </ul>
+                <ul>
+                    <li id="center">Carbon neutral since 2007</li>
+                </ul>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+    
+        </footer>
+        
+    </div>
 
+    <!-- Results page html -->
 
-    </section>
+    <div id="results-page">
+        <nav id="results-nav">
+            <a href="index.html">
+                <img id="logo-small"
+                    src=images/noodle.png>
+            </a>
+            <form>
+                <input type="text">
+                <input type="submit" style="display: none"/>
+            </form>
+        </nav>
 
-    <footer>
+        <div id="lower-nav"></div>
 
-
-    </footer>
-
+        <section id="results">
+        </section>
+    </div>
+    
+  
 </body>
 </html>
